@@ -1,22 +1,20 @@
-# GloCur: Physics-Guided Deep Learning for Global Ocean Surface Current Forecasting
+# Dynamics-preserving deep learning for global ocean surface current forecasts （under review）
 
-GloCur is a physics-guided Swin Transformer for forecasting global ocean surface
+This is a physics-guided Swin Transformer for forecasting global ocean surface
 currents. The model combines a Swin Transformer backbone with physics-based
 constraints, including potential-vorticity (PV) conservation and fluid-deformation
 regularization, to improve short-term ocean surface current prediction.
 
 > Note: this repository is provided as a reference implementation while the paper
-> is under review. Some training details are intentionally simplified, and all
-> data paths are relative placeholders that you must configure for your own data.
+> is under review. All data paths are relative placeholders that you must configure for your own data.
 
 ## Overview
 
-- **Backbone**: Swin Transformer with a U-Net encoder-bottleneck-decoder design.
+- **Backbone**: Swin Transformer with a encoder-bottleneck-decoder design.
 - **Physics constraints**: potential-vorticity conservation and fluid-deformation
   terms are added to the training loss alongside the mean squared error.
 - **Data**: GLORYS12 ocean reanalysis on a 1/12 degree global grid.
-- **Scale analysis**: coarse-graining tools (following Aluie's framework) for
-  computing cross-scale kinetic-energy flux and coarse-grained energy spectra.
+- **Scale analysis**: Compute cross-scale kinetic-energy flux and coarse-grained energy spectra.
 
 ## Repository structure
 
@@ -53,7 +51,7 @@ local GLORYS12 data and auxiliary files before training or evaluation.
 ## Training
 
 ```bash
-python train.py --loss_mode 1 --seed 42
+python train.py --loss_mode 1 --seed XX
 ```
 
 The `--loss_mode` argument is a string of digits. The digit `1` is the mean squared
