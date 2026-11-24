@@ -1,0 +1,10 @@
+torch
+pytorch-lightning
+tensorboard
+numpy
+scipy
+matplotlib
+cartopy
+pandas
+tqdm
+timm

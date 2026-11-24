@@ -1,0 +1,17 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Original download archives (not part of the source)
+*.zip
+
+# Outputs, checkpoints, and user data (not committed)
+ckpt/
+params/
+plot/
+plot_file/
+fig/
+lightning_logs/
+data/OSC/
+source/
