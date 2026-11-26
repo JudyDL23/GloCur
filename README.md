@@ -55,9 +55,8 @@ python train.py --loss_mode 1 --seed XX
 ```
 
 The `--loss_mode` argument is a string of digits. The digit `1` is the mean squared
-error. Appending `2`, `3`, or `4` adds the potential-vorticity, deformation, or
-Pearson correlation terms respectively. For example, `--loss_mode 123` trains the
-full physics-guided model.
+error. Appending `2` or `3` adds the potential-vorticity or fluid-deformation term
+respectively. For example, `--loss_mode 123` trains the full physics-guided model.
 
 ## Coarse-graining analysis
 

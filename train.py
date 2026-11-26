@@ -59,7 +59,7 @@ if __name__ == '__main__':
     parser.add_argument('--loss_mode', type=str, default='1', help='Loss mode (e.g., 1, 2, 3)')
     parser.add_argument('--l2_coeff', type=float, default=1, help='Coefficient for the PV loss')
     parser.add_argument('--l3_coeff', type=float, default=1, help='Coefficient for the deformation loss')
-    parser.add_argument('--l4_coeff', type=float, default=0, help='Coefficient for the Pearson loss')
+    parser.add_argument('--l4_coeff', type=float, default=0, help='Coefficient for the loss4 term')
     parser.add_argument('--seed', type=int, default=42, help='Random seed')
     args = parser.parse_args()
 
